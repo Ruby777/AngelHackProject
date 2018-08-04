@@ -1,0 +1,9 @@
+<h1>All Orders</h1>
+<% @orders.each do |order| %>
+   <div class="media">
+     <div class="media-body">
+        <h4 class="media-heading">
+        <p><%= link_to order.title, order %></p>
+     </div>
+   </div>
+<% end %>
